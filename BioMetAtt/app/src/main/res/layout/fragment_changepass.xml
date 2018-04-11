@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybg"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.innprojects.biometatt.fragments.ChangepassFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#cc0000"
+        android:layout_marginBottom="10dp"
+        android:text="    *Password should be minimum 8 characters long" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/textViewstudenttitles_style"
+            android:text="Confirm new PASSWORD"
+            android:textAllCaps="false"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/lineblue" />
+
+        <EditText
+            android:id="@+id/pass2"
+            style="@style/editText_suggestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/textViewstudenttitles_style"
+            android:text="new PASSWORD"
+            android:textAllCaps="false"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/lineblue" />
+
+        <EditText
+            android:id="@+id/pass1"
+            style="@style/editText_suggestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/changePassword"
+        android:textColor="@color/lineblue"
+        android:layout_gravity="right"
+        android:text="CHANGE PASSWORD"/>
+</LinearLayout>

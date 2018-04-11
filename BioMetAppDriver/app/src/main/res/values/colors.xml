@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#71DA98</color>
+    <color name="colorPrimaryDark">#353E4F</color>
+    <color name="colorAccent">#71DA98</color>
+    <color name="graybg">#d3d3d3</color>
+    <color name="whitesmoke">#f5f5f5</color>
+    <color name="red">#cc0000</color>
+
+    <!--<color name="gradient">-->
+    <!--<gradient startColor="#71DA98" endColor="#56C5ED"/>-->
+    <!--</color>-->
+    <color name="gradientblue">#56C5ED</color>
+    <color name="lineblue">#519ac8</color>
+</resources>

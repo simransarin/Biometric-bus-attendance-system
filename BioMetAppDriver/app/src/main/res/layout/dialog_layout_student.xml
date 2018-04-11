@@ -1,0 +1,197 @@
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linear_layout_studentfragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:orientation="vertical"
+        android:background="@color/graybg"
+        tools:context="com.innprojects.biometappdriver.Activity.StudentActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        style="@style/textViewstudenttitles_style"
+                        android:text="class" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/lineblue" />
+
+                    <TextView
+                        android:id="@+id/class_no"
+                        style="@style/textViewstudent_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/textViewstudenttitles_style"
+                        android:text="section" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/lineblue" />
+
+                    <TextView
+                        android:id="@+id/section"
+                        style="@style/textViewstudent_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textViewstudenttitles_style"
+                    android:text="bus no." />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/lineblue" />
+
+                <TextView
+                    android:id="@+id/bus"
+                    style="@style/textViewstudent_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textViewstudenttitles_style"
+                    android:text="Parent's name" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/lineblue" />
+
+                <TextView
+                    android:id="@+id/parent_name"
+                    style="@style/textViewstudent_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        style="@style/textViewstudenttitles_style"
+                        android:text="bus stop" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/lineblue" />
+
+                    <TextView
+                    android:id="@+id/bus_stop"
+                    style="@style/textViewstudent_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/textViewstudenttitles_style"
+                        android:text="parent's phone no." />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/lineblue" />
+
+                    <TextView
+                    android:id="@+id/phone"
+                    style="@style/textViewstudent_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>

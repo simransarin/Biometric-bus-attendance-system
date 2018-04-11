@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BusAttDriver</string>
+    <string name="title_activity_student">Student Details</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="dialog_title">LOG OUT</string>
+    <string name="dialog_text">Are you sure you want to log out?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

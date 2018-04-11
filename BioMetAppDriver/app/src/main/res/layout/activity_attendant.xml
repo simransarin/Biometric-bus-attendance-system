@@ -1,0 +1,287 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybg">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_studentfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/graybg"
+        android:orientation="vertical"
+        tools:context="com.innprojects.biometappdriver.Activity.AttendantActivity">
+
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/textViewstudenttitles_style"
+            android:text="bus no." />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginRight="50dp"
+            android:background="@color/lineblue" />
+
+        <TextView
+            android:id="@+id/bus_no"
+            style="@style/textViewstudent_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textViewstudenttitles_style"
+                    android:text="reg no." />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/lineblue" />
+
+                <ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/regno_switcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/reg_no"
+                        style="@style/textViewstudent_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true" />
+
+                    <EditText
+                        android:id="@+id/regno_edit"
+                        style="@style/editText_suggestions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters" />
+                </ViewSwitcher>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1">
+
+                <ImageButton
+                    android:id="@+id/regno_edit_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_edit" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textViewstudenttitles_style"
+                    android:text="driver's name" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/lineblue" />
+
+                <ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/driver_switcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/driver_name"
+                        style="@style/textViewstudent_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true" />
+
+                    <EditText
+                        android:id="@+id/driver_edit"
+                        style="@style/editText_suggestions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName" />
+                </ViewSwitcher>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1">
+
+                <ImageButton
+                    android:id="@+id/driver_edit_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_edit" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textViewstudenttitles_style"
+                    android:text="conductor's name" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/lineblue" />
+
+                <ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/conductor_switcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/conductor_name"
+                        style="@style/textViewstudent_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true" />
+
+                    <EditText
+                        android:id="@+id/conductor_edit"
+                        style="@style/editText_suggestions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName" />
+                </ViewSwitcher>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1">
+
+                <ImageButton
+                    android:id="@+id/conductorr_edit_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_edit" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textViewstudenttitles_style"
+                    android:text="teacher incharge" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/lineblue" />
+
+                <ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/teacher_switcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/teacher_name"
+                        style="@style/textViewstudent_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true" />
+
+                    <EditText
+                        android:id="@+id/teacher_edit"
+                        style="@style/editText_suggestions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName" />
+                </ViewSwitcher>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1">
+
+                <ImageButton
+                    android:id="@+id/teacher_edit_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_edit" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/graybg"
+            android:text="save"
+            android:textColor="#444444"
+            android:textColorHighlight="#444444"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/startattendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="start attendance"
+            android:textColor="@color/lineblue" />
+
+    </LinearLayout>
+
+</ScrollView>

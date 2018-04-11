@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_studentdetails"
+            android:icon="@drawable/student"
+            android:title="Student Details" />
+        <item
+            android:id="@+id/nav_busdetails"
+            android:icon="@drawable/buslogo"
+            android:title="Bus Details" />
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_suggestions"
+                android:icon="@drawable/suggestions"
+                android:title="Suggestions" />
+            <item
+                android:id="@+id/payment"
+                android:icon="@drawable/ic_action_payment"
+                android:title="Payment" />
+
+            <item
+                android:id="@+id/changePass"
+                android:icon="@drawable/ic_action_changepass"
+                android:title="Change Password" />
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

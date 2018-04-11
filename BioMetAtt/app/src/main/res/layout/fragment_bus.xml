@@ -1,0 +1,145 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybg">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_studentfragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/graybg"
+        android:orientation="vertical"
+        tools:context="com.innprojects.biometatt.fragments.StudentFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+        <TextView
+            style="@style/textViewstudenttitles_style"
+            android:text="Driver's Name" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginRight="50dp"
+            android:background="@color/lineblue" />
+
+        <TextView
+            android:id="@+id/driver_name"
+            style="@style/textViewstudent_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" />
+
+
+        <TextView
+            style="@style/textViewstudenttitles_style"
+            android:text="Conductor's name" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginRight="50dp"
+            android:background="@color/lineblue" />
+
+        <TextView
+            android:id="@+id/conductor_name"
+            style="@style/textViewstudent_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3" />
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/textViewstudenttitles_style"
+            android:text="bus no." />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginRight="50dp"
+            android:background="@color/lineblue" />
+
+        <TextView
+            android:id="@+id/bus_no"
+            style="@style/textViewstudent_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <TextView
+            style="@style/textViewstudenttitles_style"
+            android:text="reg no." />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginRight="50dp"
+            android:background="@color/lineblue" />
+
+        <TextView
+            android:id="@+id/reg_no"
+            style="@style/textViewstudent_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3" />
+
+        <TextView
+            style="@style/textViewstudenttitles_style"
+            android:text="teacher incharge" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginRight="50dp"
+            android:background="@color/lineblue" />
+
+        <TextView
+            android:id="@+id/teacher_name"
+            style="@style/textViewstudent_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/whatsapp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="Whatsapp attendant"
+                android:textColor="@color/lineblue"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/call"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="call driver"
+                android:textColor="@color/lineblue"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
